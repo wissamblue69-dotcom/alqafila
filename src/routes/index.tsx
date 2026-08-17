@@ -55,7 +55,7 @@ function HeroSection() {
           <div className="lg:col-span-7 space-y-8 text-center lg:text-right">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E2943]/80 border border-[#1E2943] text-xs text-[#D4AF37]">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              شراكة تقنية متكاملة مخصصة لقطاع الأعمال في دمشق
+              نموذج تجريبي موثق لإدارة سياق الوكلاء والأصول الرقمية
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
@@ -64,7 +64,7 @@ function HeroSection() {
             </h1>
 
             <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              نحن لا نقدم مجرد برمجيات، بل نبني عقولاً رقمية سيادية مستقلة لحماية بياناتك، معايرة حساباتك، وأتمتة عملياتك بدقة دلالية متناهية ونسبة خطأ معدومة.
+              القافلة طبقة تنظيمية تساعد الفرق على تتبع مصادر المعرفة، تمرير metadata بدل نسخ السياق كاملًا، ومراجعة الكود المولّد داخل غرفة رملية قبل اعتماده. كل نتيجة تُراجع بحسب مصدرها وحالتها قبل تحويلها إلى أصل قابل لإعادة الاستخدام.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -72,8 +72,8 @@ function HeroSection() {
                 href="#calculator"
                 className="w-full sm:w-auto px-8 py-4 bg-[#D4AF37] hover:bg-[#AA8C2C] text-[#0B0F19] font-bold rounded-lg transition-all shadow-lg shadow-amber-500/10 text-center flex items-center justify-center gap-2"
               >
-                <i className="fa-solid fa-calculator" />
-                احسب عائد الاستثمار لشركتك
+                <i className="fa-solid fa-chart-line" />
+                قدّر أثر الوقت المهدور
               </a>
               <a
                 href="#agent"
@@ -86,16 +86,16 @@ function HeroSection() {
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[#1E2943]/50 max-w-lg mx-auto lg:mx-0">
               <div>
-                <span className="block text-3xl font-bold text-white">60%</span>
-                <span className="text-xs text-[#94A3B8]">توفير الوقت التشغيلي</span>
+                <span className="block text-3xl font-bold text-white">01</span>
+                <span className="text-xs text-[#94A3B8]">موصل تجريبي قابل للتوثيق</span>
               </div>
               <div>
-                <span className="block text-3xl font-bold text-white">100%</span>
-                <span className="text-xs text-[#94A3B8]">دقة البيانات وحمايتها</span>
+                <span className="block text-3xl font-bold text-white">RO</span>
+                <span className="text-xs text-[#94A3B8]">قراءة فقط افتراضيًا</span>
               </div>
               <div>
-                <span className="block text-3xl font-bold text-white">963Hz</span>
-                <span className="text-xs text-[#94A3B8]">تناغم إبداعي بصري</span>
+                <span className="block text-3xl font-bold text-white">SHA</span>
+                <span className="text-xs text-[#94A3B8]">بصمة ومصدر لكل أصل</span>
               </div>
             </div>
           </div>
@@ -124,13 +124,13 @@ function HeroSection() {
                   </div>
                   <div className="text-center">
                     <span className="block text-sm font-bold tracking-widest text-white">PROCESSED BY GEMINI</span>
-                    <span className="text-[10px] text-[#94A3B8]">963Hz Frequency Resonance System</span>
+                    <span className="text-[10px] text-[#94A3B8]">Metadata + Provenance + Sandbox</span>
                   </div>
                 </div>
 
                 <div className="border-t border-[#1E2943] pt-4 text-[10px] text-[#94A3B8] flex justify-between relative z-10">
                   <span>SYSTEM STATUS: STABLE</span>
-                  <span>LATENCY: 12ms (LOCAL)</span>
+                  <span>MODE: DRY-RUN / READ-ONLY</span>
                 </div>
               </div>
             </div>
@@ -145,19 +145,25 @@ function HeroSection() {
 function ArchitectureSection() {
   const protocols = [
     {
+      icon: 'fa-diagram-project',
+      title: 'سجل الأصول وProvenance',
+      status: 'مواصفة قابلة للمراجعة',
+      desc: 'يربط كل نص أو كود أو وسيط بمصدره وإصداره وبصمته وحقوقه وحالة إعادة استخدامه، مع فصل المصدر الأصلي عن الملخص والاستنتاج.',
+      source: 'https://github.com/wissamblue69-dotcom/qafila-systems-architecture',
+    },
+    {
+      icon: 'fa-box-open',
+      title: 'غرفة الرمل متعددة الوكلاء',
+      status: 'نمط تجريبي',
+      desc: 'يبني وكيل الكود داخل بيئة معزولة، ثم يراجعه وكيل آخر ويختبره قبل مرور artifact عبر بوابة اعتماد. لا يحدث تنفيذ على البيئة العادية تلقائيًا.',
+      source: 'https://github.com/wissamblue69-dotcom/AlQFILA',
+    },
+    {
       icon: 'fa-shield-halved',
-      title: 'بروتوكول الحوكمة الدلالية (SGP)',
-      desc: 'طبقة وسيطة (Middleware) حاسمة تعمل قبل إنتاج البيانات لمنع الهلوسة التقنية، وضمان مطابقة مخرجات النظام لقواعد العمل المسبقة بنسبة دقة مطلقة.',
-    },
-    {
-      icon: 'fa-wave-square',
-      title: 'بروتوكول المزامنة الترددية (FAP)',
-      desc: 'محرك متقدم لمعالجة الأصول الصوتية والبصرية ومزامنتها على تردد 963Hz المعياري لضمان التناغم الشعوري والجمالية الإخراجية والسينمائية الفخمة.',
-    },
-    {
-      icon: 'fa-database',
-      title: 'بحيرة الذاكرة المتجهة (VML)',
-      desc: 'مستودع أصول ذكي يعتمد على تقنيات الاسترجاع المعزز (RAG)، يضمن حفظ وأرشفة كافة القرارات والتفاعلات وتحويلها لبلورات معرفية مستمرة.',
+      title: 'MCP محلي بحدود واضحة',
+      status: 'قراءة فقط / قيد الاختبار',
+      desc: 'يوفر عقدًا محليًا محدود النطاق لقراءة metadata والملفات المسموح بها، مع رفض افتراضي للكتابة والتنفيذ والاتصال الخارجي.',
+      source: 'https://github.com/wissamblue69-dotcom/AlQFILA',
     },
   ]
 
@@ -165,11 +171,12 @@ function ArchitectureSection() {
     <section id="architecture" className="py-24 bg-[#0B0F19] border-t border-[#1E2943] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <h2 className="text-xs font-bold tracking-widest text-[#D4AF37] uppercase">المواصفات الفنية المعتمدة</h2>
+            <h2 className="text-xs font-bold tracking-widest text-[#D4AF37] uppercase">مكوّنات موثقة وحالاتها</h2>
           <h3 className="text-3xl sm:text-4xl font-black">العمارة الدلالية والبروتوكولات</h3>
-          <p className="text-[#94A3B8]">
-            تعتمد القافلة على بروتوكولات حوكمة ومعالجة مبتكرة تم تصميمها وبناؤها لتجاوز قيود الذكاء الاصطناعي التقليدي وتوفير استقرار كامل للأعمال.
+            <p className="text-[#94A3B8]">
+            هذه الواجهة تعرض مكوّنات من سجل القافلة كما هي حاليًا: بعضُها مواصفات، وبعضُها هياكل تجريبية. نعرض الحالة والمصدر بدل تقديم وعود أداء أو جاهزية إنتاجية غير مثبتة.
           </p>
+          <a href="/caravan-asset-register.json" target="_blank" rel="noreferrer" className="inline-flex text-xs text-[#D4AF37] hover:text-white">عرض سجل الأصول العام ↗</a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -182,7 +189,9 @@ function ArchitectureSection() {
                 <i className={`fa-solid ${p.icon} text-xl`} />
               </div>
               <h4 className="text-xl font-bold text-white mb-3">{p.title}</h4>
+              <span className="inline-flex mb-3 text-[10px] text-[#D4AF37] border border-[#D4AF37]/30 rounded px-2 py-1">{p.status}</span>
               <p className="text-sm text-[#94A3B8] leading-relaxed">{p.desc}</p>
+              <a href={p.source} target="_blank" rel="noreferrer" className="inline-flex mt-5 text-xs text-[#D4AF37] hover:text-white">فتح مصدر GitHub ↗</a>
             </div>
           ))}
         </div>
@@ -196,13 +205,9 @@ function CalculatorSection() {
   const [avgSalary, setAvgSalary] = useState(1200)
   const [teamSize, setTeamSize] = useState(5)
   const [wasteHours, setWasteHours] = useState(10)
-  const [projectVal, setProjectVal] = useState(50000)
-
-  const hoursSaved = Math.round(wasteHours * teamSize * 4.33 * 0.6)
+  const baselineHours = Math.round(wasteHours * teamSize * 4.33)
   const hourRate = avgSalary / 160
-  const moneySaved = Math.round(hoursSaved * hourRate)
-  const setupCost = 3000
-  const payback = moneySaved > 0 ? (setupCost / moneySaved).toFixed(1) : null
+  const baselineValue = Math.round(baselineHours * hourRate)
 
   return (
     <section id="calculator" className="py-24 bg-gradient-to-b from-[#0B0F19] to-[#161D30] border-t border-[#1E2943] relative">
@@ -210,14 +215,14 @@ function CalculatorSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 space-y-6">
             <h2 className="text-xs font-bold tracking-widest text-[#D4AF37] uppercase">محرك الجدوى الاقتصادية</h2>
-            <h3 className="text-3xl sm:text-4xl font-black">احسب أثر "القافلة" المالي على منشأتك</h3>
+            <h3 className="text-3xl sm:text-4xl font-black">              قدّر تكلفة الوقت المهدور قبل أي Pilot</h3>
             <p className="text-[#94A3B8] leading-relaxed">
-              قم بتحديد مؤشرات العمل الحالية في شركتك، وسيقوم محركنا الحسابي المدرب بتقدير الساعات التشغيلية والسيولة النقدية التي سيتم استردادها فور تبني بروتوكولات القافلة المعرفية.
+              أدخل افتراضاتك الحالية للحصول على خط أساس تقريبي لقيمة الوقت المهدور. هذه ليست حاسبة ROI ولا وعدًا بالتوفير؛ القرار يحتاج Pilot وقياسًا قبل وبعد.
             </p>
             <div className="p-4 rounded-lg bg-[#0B0F19] border border-[#1E2943] space-y-3">
               {[
-                'توفير فوري في تكاليف الأخطاء التقنية والمطبعية',
-                'استرجاع القدرة الابتكارية بنسبة 40% لفريقك',
+                'خط أساس قابل للمقارنة قبل وبعد التجربة',
+                'تقدير أولي لا يُستخدم كضمان مالي أو استثماري',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 text-sm text-white">
                   <i className="fa-solid fa-circle-check text-[#D4AF37]" />
@@ -239,7 +244,7 @@ function CalculatorSection() {
                 { label: 'متوسط رواتب الفريق الشهري ($)', value: avgSalary, setter: setAvgSalary },
                 { label: 'عدد أفراد الفريق المتأثرين', value: teamSize, setter: setTeamSize },
                 { label: 'ساعات الهدر اليدوية الأسبوعية / للفرد', value: wasteHours, setter: setWasteHours },
-                { label: 'القيمة التقريبية للمشروع السنوي ($)', value: projectVal, setter: setProjectVal },
+
               ].map(({ label, value, setter }) => (
                 <div key={label} className="space-y-2">
                   <label className="block text-xs font-semibold text-[#94A3B8]">{label}</label>
@@ -260,17 +265,16 @@ function CalculatorSection() {
                   <span className="text-xl font-bold text-[#D4AF37]">{hoursSaved} ساعة</span>
                 </div>
                 <div className="p-3 bg-[#0B0F19] rounded-lg border border-[#1E2943]">
-                  <span className="block text-xs text-[#94A3B8]">توفير مالي شهري</span>
-                  <span className="text-xl font-bold text-emerald-500">${moneySaved.toLocaleString()}</span>
+                  <span className="block text-xs text-[#94A3B8]">قيمة وقت مهدور تقديرية / شهر</span>
+                  <span className="text-xl font-bold text-emerald-500">${baselineValue.toLocaleString()}</span>
                 </div>
                 <div className="p-3 bg-[#0B0F19] rounded-lg border border-[#1E2943]">
-                  <span className="block text-xs text-[#94A3B8]">كفاءة تشغيلية مستعادة</span>
-                  <span className="text-xl font-bold text-blue-400">+60%</span>
+                  <span className="block text-xs text-[#94A3B8]">خط أساس الساعات / شهر</span>
+                  <span className="text-xl font-bold text-blue-400">{baselineHours.toLocaleString()}</span>
                 </div>
               </div>
               <div className="pt-4 border-t border-[#1E2943]/50 text-xs text-[#94A3B8] text-center">
-                الاسترداد المتوقع للاستثمار الأساسي للمنظومة يتم خلال{' '}
-                <span className="font-bold text-white">{payback ? `${payback} أشهر` : 'مستمر'}</span> فقط.
+                النتيجة تقدير أولي مبني على مدخلاتك، وليست توقعًا للعائد أو مدة الاسترداد. نقيس الأثر الحقيقي داخل Pilot محدد.
               </div>
             </div>
           </div>
@@ -283,11 +287,11 @@ function CalculatorSection() {
 // ─── Chat Agent ─────────────────────────────────────────────────────────────────
 const PREDEFINED: Record<string, string> = {
   'كيف تضمن القافلة عدم هذيان الذكاء الاصطناعي؟':
-    'نحن نطبق بروتوكول الحوكمة الدلالية (SGP) كطبقة حماية تفحص كل مخرج للـ LLM وتطابقه مع القواعد الصارمة لشركتك. النتيجة هي دقة كاملة وصفرية الأخطاء.',
+    'لا نقدم ضمانًا بصفر أخطاء. المسار المقترح هو ربط المخرج بمصدره، وتصنيفه، ثم مراجعته قبل اعتماده. هذه الواجهة محاكاة؛ ويحتاج كل Pilot إلى اختبارات خاصة ببيانات العميل.',
   'ما هي الفوائد التشغيلية للـ RAG وبحيرة الذاكرة؟':
-    'بحيرة الذاكرة تتيح للوكلاء حفظ سياقات وتفاصيل المحادثات التاريخية كبلورات معرفية متجهة. هذا يحمي شركتك من فقدان خبرة الموظفين إذا غادروا، ويبقي عقل الشركة في خزانة آمنة.',
-  'كيف يعمل بروتوكول المزامنة الترددية 963Hz؟':
-    'بروتوكولنا الترددي يعالج الأصول المرئية والموسيقية لضبط الإخراج والجمالية السينمائية، مما يمنح الأعمال عمقاً نفسياً وشعورياً استثنائياً يتجاوز المحتوى الرقمي التقليدي.',
+    'يمكن لـRAG تحسين الوصول إلى سياق موثق عندما تُدار المصادر والفهارس جيدًا. الأثر الفعلي يعتمد على البيانات والإعدادات والاختبار، لذلك نبدأ بخط أساس ونقارن قبل وبعد.',
+  'ما حالة بروتوكول 963 في العرض الحالي؟':
+    'يظهر هذا المصطلح في مواد القافلة بوصفه مفهومًا إبداعيًا/فلسفيًا، وليس معيار أداء مثبتًا في هذه الواجهة. لا نستخدمه كضابط أمني أو كادعاء تقني دون تعريف واختبار مستقل.',
 }
 
 interface ChatMessage {
@@ -298,7 +302,7 @@ interface ChatMessage {
 function AgentSection() {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
-      text: 'أهلاً بك في فضاء القافلة المعرفي. أنا وكيل المبيعات السيادي. كيف يمكنني مساعدتك اليوم في فحص البنية التحتية لشركتك وتحسين كفاءتها التشغيلية؟',
+      text: 'أهلاً بك في العرض التجريبي للقافلة. أنا وكيل توضيحي أساعدك على فهم مسار الأصول والـPilot، ولا أقدم ضمانات أداء أو تسعيرًا نهائيًا.',
       isUser: false,
     },
   ])
@@ -315,10 +319,10 @@ function AgentSection() {
   const getReply = (text: string) => {
     if (PREDEFINED[text]) return PREDEFINED[text]
     if (text.includes('سعر') || text.includes('تكلفة'))
-      return 'تكلفتنا تُحسب كـ "استثمار في السيادة الرقمية". نحن نضع تسعيراً مخصصاً يعتمد على حجم الهدر المالي الذي سنقوم بتوفيره لشركتك شهرياً.'
+      return 'التكلفة لا تُستنتج من هذه المحاكاة. نحدد نطاق Pilot ومخرجاته ثم نرسل عرضًا يراجعه الطرفان قبل أي التزام.'
     if (text.includes('دمشق') || text.includes('البحصة'))
-      return 'محيطنا في دمشق والبحصة هو العصب التجاري للحلول؛ نحن نوفر خوادم محلية آمنة وبنية تحتية سحابية متوافقة تماماً مع متطلبات السوق السورية.'
-    return 'بصفتي وكيل القافلة السيادي، يسعدني فحص هذا الاحتياج. هذا يتطلب تفعيل طبقة المعايرة لدينا. يرجى حجز استشارة في النموذج أدناه لمناقشة التفاصيل تحت حماية اتفاقية عدم الإفشاء.'
+      return 'يمكن مناقشة بيئة التشغيل المحلية أو السحابية بعد تحديد المتطلبات والامتثال والبيانات. لا نفترض جاهزية أو توافقًا كاملًا قبل الفحص.'
+    return 'أستطيع تسجيل هذا كاحتياج أولي، ثم نحدد المصدر والبيانات ونطاق التجربة. لا تُرسل معلومات سرية هنا؛ استخدم نموذج التواصل لطلب مراجعة أولية.'
   }
 
   const sendMessage = (text?: string) => {
@@ -332,10 +336,10 @@ function AgentSection() {
   const quickButtons = [
     'كيف تضمن القافلة عدم هذيان الذكاء الاصطناعي؟',
     'ما هي الفوائد التشغيلية للـ RAG وبحيرة الذاكرة؟',
-    'كيف يعمل بروتوكول المزامنة الترددية 963Hz؟',
+    'ما حالة بروتوكول 963 في العرض الحالي؟',
   ]
 
-  const quickLabels = ['تجنب الهذيان الدلالي', 'فوائد بحيرة الذاكرة', 'تردد 963Hz الفني']
+  const quickLabels = ['المصدر والمراجعة', 'فوائد RAG المشروطة', 'حالة بروتوكول 963']
 
   return (
     <section id="agent" className="py-24 bg-[#0B0F19] border-t border-[#1E2943] relative">
@@ -354,7 +358,7 @@ function AgentSection() {
               <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
               <div>
                 <span className="block text-sm font-bold text-white">الوكيل التجاري للقافلة (Sovereign Sales Agent)</span>
-                <span className="text-[9px] text-[#D4AF37]">قائم على عمارة دلالية مستقلة</span>
+                    <span className="text-[9px] text-[#D4AF37]">محاكاة توضيحية — ليست خدمة حية</span>
               </div>
             </div>
             <span className="text-xs text-[#94A3B8] font-mono">SECURE LIVE SESSION</span>
@@ -426,6 +430,8 @@ function encode(data: Record<string, string>) {
 
 function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState('')
   const [fields, setFields] = useState({
     'client-name': '',
     'client-phone': '',
@@ -439,12 +445,21 @@ function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    await fetch('/qafila-lead.html', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'qafila-lead', ...fields }),
-    })
-    setSubmitted(true)
+    setIsSubmitting(true)
+    setSubmitError('')
+    try {
+      const response = await fetch('/qafila-lead.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'qafila-lead', ...fields }),
+      })
+      if (!response.ok) throw new Error('form submission failed')
+      setSubmitted(true)
+    } catch {
+      setSubmitError('تعذر إرسال الطلب الآن. تحقق من الاتصال وحاول مرة أخرى، ولا ترسل أسرارًا أو مفاتيح عبر النموذج.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const inputClass =
@@ -456,8 +471,8 @@ function ContactSection() {
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-xs font-bold tracking-widest text-[#D4AF37] uppercase">بوابة حجز الاستشارات</h2>
           <h3 className="text-3xl font-black">اطلب دراسة الجدوى التقنية (ROI Analysis)</h3>
-          <p className="text-[#94A3B8]">
-            أدخل بياناتك الأساسية، وسيقوم فريق التطوير المعماري بالتواصل معك لجدولة لقاء تقني وعرض حي للمنظومة على بياناتك الفعلية.
+            <p className="text-[#94A3B8]">
+            أرسل وصفًا عامًا للاحتياج فقط. سنقترح نطاق Pilot ومخرجاته وحدود البيانات المطلوبة؛ لا ترسل أسرارًا أو مفاتيح أو بيانات شخصية حساسة في هذا النموذج.
           </p>
         </div>
 
@@ -468,13 +483,13 @@ function ContactSection() {
                 <i className="fa-solid fa-circle-check" />
               </div>
               <div className="space-y-2">
-                <h4 className="text-2xl font-black text-white">تم استلام طلبك بنجاح سيادي</h4>
-                <p className="text-[#94A3B8] max-w-md mx-auto">
-                  تم تسجيل بياناتك ضمن بحيرة الذاكرة لقسم الاستفسارات التجارية. سيقوم منسق الأنظمة بالتواصل معك هاتفياً أو عبر الواتساب خلال 24 ساعة لجدولة العرض الفني.
+                  <h4 className="text-2xl font-black text-white">تم استلام طلبك للمراجعة</h4>
+                  <p className="text-[#94A3B8] max-w-md mx-auto">
+                  سيُراجع الفريق نطاق الاحتياج ووسيلة التواصل التي قدمتها. لا نعد بمدة استجابة محددة أو بنتيجة مالية قبل تحديد Pilot مناسب.
                 </p>
               </div>
               <button
-                onClick={() => { setSubmitted(false); setFields({ 'client-name': '', 'client-phone': '', 'client-company': '', 'target-mod': 'SGP', 'client-note': '' }) }}
+                onClick={() => { setSubmitted(false); setSubmitError(''); setFields({ 'client-name': '', 'client-phone': '', 'client-company': '', 'target-mod': 'SGP', 'client-note': '' }) }}
                 className="px-6 py-2 bg-[#161D30] hover:bg-[#1E2943] border border-[#1E2943] text-white text-sm rounded-lg transition-all"
               >
                 تقديم طلب آخر
@@ -545,12 +560,15 @@ function ContactSection() {
                 />
               </div>
 
+              {submitError && <p role="alert" className="text-sm text-red-300 border border-red-400/30 bg-red-400/10 rounded-lg px-4 py-3">{submitError}</p>}
+
               <button
                 type="submit"
-                className="w-full py-4 bg-[#D4AF37] hover:bg-[#AA8C2C] text-[#0B0F19] font-bold rounded-lg transition-all shadow-lg shadow-amber-500/10 hover:shadow-amber-500/25 flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className="w-full py-4 bg-[#D4AF37] hover:bg-[#AA8C2C] disabled:opacity-60 disabled:cursor-not-allowed text-[#0B0F19] font-bold rounded-lg transition-all shadow-lg shadow-amber-500/10 hover:shadow-amber-500/25 flex items-center justify-center gap-2"
               >
-                <i className="fa-solid fa-paper-plane" />
-                إرسال الطلب واعتماده دلالياً
+                <i className={`fa-solid ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'}`} />
+                {isSubmitting ? 'جارٍ إرسال الطلب...' : 'إرسال طلب Pilot للمراجعة'}
               </button>
             </form>
           )}
@@ -573,13 +591,12 @@ function Footer() {
         </div>
 
         <p className="text-xs text-[#94A3B8] max-w-2xl mx-auto leading-relaxed">
-          كافة البروتوكولات المذكورة (SGP, FAP)، وهياكل الذاكرة المتجهة الموصوفة، وحاسبة العائد الاستثماري الدلالي، والرسوم البصرية وتصاميم النظم، هي حقوق ملكية فكرية مطلقة ومسجلة باسم المطور والمالك الرئيسي{' '}
-          <strong className="text-white">Wissam Haj Mohammed</strong> وتراث{' '}
-          <strong className="text-white">"بلا أهداف"</strong>. يُمنع تماماً نسخ هذه البنية أو استخدام مخرجاتها دون تصريح كتابي ومسبق.
+          تُعرض هذه الصفحة بوصفها واجهة تجريبية لأصول منظومة القافلة. يُنسب التوثيق المعماري في مستودع المرجع إلى{' '}
+          <strong className="text-white">Wissam Hajj Mohammad</strong>. حالة الملكية والترخيص لكل أصل تُراجع في سجل Provenance؛ لا تُفهم هذه الصفحة وحدها كإثبات تسجيل قانوني أو كترخيص للاستخدام.
         </p>
 
         <div className="text-[10px] text-[#94A3B8] pt-4 border-t border-[#1E2943]/30 max-w-md mx-auto">
-          &copy; 2026 منظومة القافلة. تم التطوير بمعايير شراكات جوجل المعتمدة. جميع الحقوق محفوظة.
+          &copy; 2026 منظومة القافلة. الحالة الحالية: نموذج تجريبي؛ راجع المصادر وحالة الأصول قبل إعادة الاستخدام.
         </div>
       </div>
     </footer>
