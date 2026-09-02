@@ -1,0 +1,32 @@
+{
+  "schema_version": "caravan-public-asset-register.v1",
+  "generated_for": "Al-Qafila landing page",
+  "notice": "This public register records attribution and evidence links; it is not a legal ownership determination or a production-readiness guarantee.",
+  "assets": [
+    {
+      "asset_id": "GH-ARCH-001",
+      "title": "Qafila Systems Architecture",
+      "type": "architecture_repository",
+      "status": "documented",
+      "evidence_status": "source_read",
+      "attributed_to": "Wissam Hajj Mohammad",
+      "source": "https://github.com/wissamblue69-dotcom/qafila-systems-architecture"
+    },
+    {
+      "asset_id": "GH-RUNTIME-001",
+      "title": "AlQFILA",
+      "type": "execution_repository",
+      "status": "specified_and_skeleton",
+      "evidence_status": "source_read",
+      "source": "https://github.com/wissamblue69-dotcom/AlQFILA"
+    },
+    {
+      "asset_id": "GH-MARKETING-001",
+      "title": "Al-Qafila marketing application",
+      "type": "marketing_application",
+      "status": "prototype_or_demo",
+      "evidence_status": "source_read",
+      "source": "https://github.com/wissamblue69-dotcom/alqafila"
+    }
+  ]
+}
